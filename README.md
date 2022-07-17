@@ -67,3 +67,37 @@ When the user opens your dashboard app, they see HTML tables showing the followi
 
 * Make the tables sortable by (at least) the column holding the numbers. Indicate what columns are sortable (e.g with an icon or by adding the <> charectars in the column header e.t.c). When the user clicks on a sortable column header, sort the records in the table by that column (e.g switch the current sort order such that if the column was already sorted ASC, sort in DESC)
 
+
+
+CIRCLE 346 PHONIE APP PROJECT
+
+
+Build an HTML Contact form for users to submit inputs to be saved to a contact list
+
+1i. Input Fields with Label
+Full Name, (Required with Placeholder(Surname first) (ID: f_name)
+Email (Required, type specified for validation, placeholder)(ID: email)
+Phone Number (Required, Use HTML datalist attribute to create suggestions) (Must have a unique ID:#p_number)
+1ii. Inline Image tag which would hold logos of the different mobile networks (Must also have a unique ID: #m_logo)
+
+1iii. Drop down list (Track: FrontEnd, BackEnd, Cloud Engineering) (iD: l_track)
+1iv. Submit Button (ID: Submit)
+
+
+Write CSS Stylesheet.
+
+2i. Form content must be centralized.
+2ii. Use a Google font ( Roboto, Montserrat)
+2iii. Style Input fields to have margin and padding.
+2iv. Make Submit button the same length as the input field
+2v. Style placeholder for network image( Inline with Phone number input field and should be the same height)
+2vi. Make Form responsive for different screen sizes.
+
+Write Javascript.
+
+3i. Write a Javascript function to check the Phone number using Regex (this should happen once the user starts typing.)
+3ii. Write a Javascript Function to change Mobile Network Logos based on the return from Regex validated value. 
+3iii.  Write a javascript function for validating form inputs on click of the submit button, and display contact details.
+
+CLICK ON LINK TO JOIN REPL.IT TEAM. AN EMAIL INVITE HAS ALSO BEEN SENT
+Join Repl.it Team
