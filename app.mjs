@@ -1,13 +1,8 @@
 function startApp() {
-    // Your entire app should not necessarily be coded inside this 
-    // single function (though there's no penalty for that), 
-    // so create and use/call additional functions from here
-  
-    // pls remove the below and make some magic in here!
-
-    // Store DOM Inputs in Variables
+// Stored DOM Objects and Network Array at the top to give global scope
+    // Storine DOM Inputs in Variables
     let headerTitle = document.getElementsByClassName ("headerTitle");
-    let fName = document.getElementById ('fName');
+    let fName = document.getElementById ("fName");
     let lName = document.getElementById("lName");
     let emailAdd = document.getElementById("emailAdd")
     let countryCode = document.getElementById("countryCode");
@@ -52,33 +47,31 @@ function startApp() {
         }
       }];
 
-      console.log(networkId[1].network.identifiers.includes(808));
+// Testing Microphone 1,2 Tueh Tueh
       console.log(networkLogo);
       console.log(networkLogo.innerHTML);
 
-      // Function to check Phone Number against the array of Network Objects and display logo 
+// Function to check Phone Number against the array of Network Objects and display logo 
 /**
  * @param {Number} num the interger containing the retrieved first three phone number
  * @param {array} networkId array holding network objects
  */
   function checkPhoneNumber(num,networkId) {
-        // console.log(num, networkId);
+// Create empty object and attach data if num is true in .identifiers
         let net = {};
-          if (num <= 700 || null || undefined) {networkLogo.textContent = 'Detecting Network'}; 
             for (let i = 0; i < networkId.length; i++) {
+                console.log(networkLogo.innerHTML); 
               if  (networkId[i].network.identifiers.includes(num)){
                 net = networkId[i].network;
                   console.log(net);
                   break;
               }
             };
-
 // Changes logo based on return from net variable
-      // console.log(net.imageUrl);
-      // console.log(networkLogo.innerHTML);
-      networkLogo.innerHTML = `<img src = "${net.imageUrl}"  class = "netImg" alt ="${net.name}"/>`;
-      // console.log(networkLogo.innerHTML);
-    };
+      if (net != undefined || null ) {
+      networkLogo.innerHTML = `<img src = "${net.imageUrl}"  class = "netImg" alt ="${net.name}"/>`;}
+    }
+  
 // Event listener to trigger checkPhoneNumber function on input of first three digits
       phoneNumber.addEventListener("input", (e) => {
         let firstThree = parseInt((phoneNumber.value.slice(0,3)));
@@ -86,7 +79,7 @@ function startApp() {
         checkPhoneNumber(firstThree, networkId);
        });
     
-  };
+};
   
   // ======= DO NOT EDIT ============== //
   export default startApp;
