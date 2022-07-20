@@ -1,0 +1,42 @@
+form div {
+    display: block;
+    margin: 20px auto;
+}
+
+form div label {
+    display: block;
+}
+
+form div input {
+    width: 40vw;
+}
+
+#m_logo {
+    width:"20px";
+    height: "20px";
+}
+.netImg {
+    width: 20px;
+    height: 20px;
+}
+.headerTitle {
+    text-align: center;
+}
+
+.contact-form {
+    margin: 20px auto;
+    border: 2px solid rgb(4, 28, 37);
+    width: 60vw;
+}
+.contact-form-cont {
+    margin: 20px auto;
+}
+
+.contact-form-wrapper {
+    margin: 20px auto;
+    padding: 10px
+}
+
+#CountryCode {
+    display: inline;
+}
