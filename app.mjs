@@ -53,7 +53,7 @@ function startApp() {
 
 // Function to check Phone Number against the array of Network Objects and display logo 
 /**
- * @param {Number} num the interger containing the retrieved first three phone number
+ * @param {Number} num the integer containing the retrieved first three phone number
  * @param {array} networkId array holding network objects
  */
   function checkPhoneNumber(num,networkId) {

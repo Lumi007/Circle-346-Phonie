@@ -5,46 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle 346 Phonie App</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+    <div class="bodyWrapper">
     <!-- Title of page -->
+    <div class ="circleLogo">
+      <img src="https://res.cloudinary.com/lumi007/image/upload/v1658393435/Black_Simple_Queen_Logo_Design_htt22e.png" alt="Circle Logo">
+    </div>
     <div class="headerTitle">
-        <h2>Circle 346 Phonie App</h2>
+        <h2>Phonie App</h2>
     </div>
 
     <form  action="#" method="POST" class="contact-form">
         <div class="contact-form-cont">
             <div class="contact-form-wrapper">
-                <div>
+                <div class="space">
                     <label for="Firstname">First Name: </label>
-                    <input type="text"  id ="fName" name="Firstname" placeholder="First Name" required/>
+                    <input type="text"  id ="fName" name="Firstname" placeholder="Enter your first name" required/>
                     <br/>
                 </div>
-                <div>
+                <div class="space">
                     <label for="Lastname">Last Name: </label>
-                    <input type="text" id = "lName" name="Lastname" placeholder="Last Name" required/>
+                    <input type="text" id = "lName" name="Lastname" placeholder="Enter your last name" required/>
                     <br/>
                 </div>
-                <div>
+                <div class="space">
                     <label for="emailaddress">Email Address: </label>
-                    <input type="email" id= "emailAdd" name= "emailaddress" placeholder="Email Address" required />
+                    <input type="email" id= "emailAdd" name= "emailaddress" placeholder="Enter your email address" required />
                     <br/>
                 </div>
-                <div>
-                    <label for="phonenumber">Mobile Number: </label>
-                    <select id="countryCode" name="CountryCode">
-                        <option value="+234">+234</option>
-                    </select>
-                    <input id = "p_number" type="tel" name="PhoneNumber" placeholder="Enter remaining 10 digits" pattern="[0-9]{8}">
-                    <span id ="m_logo" >
+                <div class="space">
+                    <label for="phonenumber">Mobile Number:</label>
+                    <div class = "pNumber_cont">
+                      <div class= "codeCountry">
+                        <select id="countryCode" name="CountryCode">
+                            <option value="+234">+234</option>
+                        </select>
+                      </div> 
+                      <div class= "p_NumberInput">
+                        <input id = "p_number" type="tel" name="PhoneNumber" placeholder="Enter remaining 10 digits" pattern="[0-9]{8}">
+                      </div>
+                      <div id ="m_logo" >
                         <!-- Javascript adds logo here oninput -->
-                    </span>
-                </div>
-                <div>
-                    <label for="track">Track</label>
+                      </div>
+                    </div>
+                  </div>
+                <div class="space">
+                    <label for="track">Track:</label>
                     <select id="track" name="track">
                       <option value="frontend">Front End Engineering</option>
                       <option value="backend">Back End Engineering</option>
@@ -52,17 +60,14 @@
                     </select>  
                     <br/>
                 </div>
-                <div class="buttons-cont">	
-                    <br/>
+                <div class="buttons-cont">
                     <button id = "submit" type="submit">Create</button>
                     <button id = "cancel">Cancel</button>
                 </div>	
             </div>
         </div>
     </form>
-
-
-
+</div>
 
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->

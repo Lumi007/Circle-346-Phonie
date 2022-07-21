@@ -1,42 +1,117 @@
-form div {
-    display: block;
-    margin: 20px auto;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-form div label {
-    display: block;
+body {
+  background: linear-gradient(-45deg, #81CACF,#355764); 
+  margin: 0 10px;
+}
+.bodyWrapper {
+  background: linear-gradient(-45deg, #F0EBE3, #e9fbf4);
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 1px 3px #c5c4c4
 }
 
-form div input {
-    width: 40vw;
-}
-
-#m_logo {
-    width:"20px";
-    height: "20px";
-}
-.netImg {
-    width: 20px;
-    height: 20px;
-}
-.headerTitle {
-    text-align: center;
-}
-
-.contact-form {
-    margin: 20px auto;
-    border: 2px solid rgb(4, 28, 37);
-    width: 60vw;
-}
-.contact-form-cont {
-    margin: 20px auto;
+.bodyWrapper h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  
 }
 
 .contact-form-wrapper {
-    margin: 20px auto;
-    padding: 10px
+  margin: 20px;
 }
 
-#CountryCode {
-    display: inline;
+form label {
+  display: block;
+  color: #4C3A51;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 5px;
+  
+}
+
+form select {
+  display: block;
+  color: #4C3A51;
+  margin-bottom: 6px;
+  
+}
+
+form input, select{
+  padding: 13px 0 13px 25px;
+  width :100%;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  word-wrap: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+  box-shadow: 1px 3px #c5c4c4
+}
+.pNumber_cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+form select option {
+  text-align: center;
+}
+.space{
+  margin-bottom: 20px;
+}
+.buttons-cont{
+  display: flex;
+  justify-content: space-between;
+}
+.buttons-cont button{
+  background: #355764;
+  color:#F0EBE3;
+  width: 48%;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #4C3A51;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 1px 3px #c5c4c4
+  
+}
+.buttons-cont button:hover{
+  background: #F0EBE3;
+  color:#355764;
+  font-weight: bold;
+  border: 2px solid #4C3A51;
+  text-align: center;
+  box-shadow: 1px 3px #c5c4c4;
+}
+.circleLogo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.circleLogo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 1px 3px #c5c4c4;
+}
+#m_logo img {
+  width : 50px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 3px #c5c4c4
 }
