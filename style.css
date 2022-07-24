@@ -43,14 +43,35 @@ form label {
   
 }
 
-form select {
+#track {
   display: block;
-  color: #4C3A51;
-  margin-bottom: 6px;
+  padding: 13px 0 13px 25px;
+  width :100%;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  word-wrap: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+  box-shadow: 1px 3px #c5c4c4;
   
 }
 
-form input, select{
+#countryCode {
+  display: block;
+  padding: 13px 8px 13px 0px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+  box-shadow: 1px 3px #c5c4c4;
+  text-align: left;
+}
+
+form input {
   padding: 13px 0 13px 25px;
   width :100%;
   border: 2px solid #dddddd;
@@ -78,6 +99,7 @@ form select option {
   justify-content: space-between;
 }
 .buttons-cont button{
+  margin-top: 10px;
   background: #355764;
   color:#F0EBE3;
   width: 48%;
@@ -86,16 +108,19 @@ form select option {
   border: 2px solid #4C3A51;
   font-weight: bold;
   margin-bottom: 20px;
-  box-shadow: 1px 3px #c5c4c4
+  box-shadow: 1px 3px #c5c4c4;
+  border-radius: 5px;
   
 }
 .buttons-cont button:hover{
+  margin-top: 10px;
   background: #F0EBE3;
   color:#355764;
   font-weight: bold;
   border: 2px solid #4C3A51;
   text-align: center;
   box-shadow: 1px 3px #c5c4c4;
+  border-radius: 5px;
 }
 .circleLogo {
   position: absolute;
@@ -113,5 +138,21 @@ form select option {
   width : 50px;
   height: 50px;
   border-radius: 5px;
-  box-shadow: 1px 3px #c5c4c4
+  box-shadow: 1px 3px #c5c4c4;
+}
+
+#m_logo p {
+  width : 50px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 3px #c5c4c4;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 0.75em;
+  padding-top: 13px;
+  color: #555555;
+}
+
+.p_NumberInput input::placeholder{
+  font-size: 0.75em;
 }

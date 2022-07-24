@@ -11,6 +11,8 @@ function startApp() {
     let track = document.getElementById("track");
     let submit = document.getElementById("submit");
     let cancel = document.getElementById("cancel");
+    let phonieform = document.querySelector(".phonieform");
+    console.log(phonieform);
     console.log(networkLogo);
     // Network detials in an an array of objects
     let networkId = [
@@ -58,27 +60,48 @@ function startApp() {
  */
   function checkPhoneNumber(num,networkId) {
 // Create empty object and attach data if num is true in .identifiers
-        let net = {};
-            for (let i = 0; i < networkId.length; i++) {
-                console.log(networkLogo.innerHTML); 
-              if  (networkId[i].network.identifiers.includes(num)){
-                net = networkId[i].network;
-                  console.log(net);
-                  break;
-              }
-            };
-// Changes logo based on return from net variable
-      if (net != undefined || null ) {
-      networkLogo.innerHTML = `<img src = "${net.imageUrl}"  class = "netImg" alt ="${net.name}"/>`;}
-    }
-  
+        let net ;
+        for (let i = 0; i < networkId.length; i++) {
+          // Loop through the array of objects and if num is true
+          if (networkId[i].network.identifiers.includes(num)) {
+            net = networkId[i].network;
+            break;
+          }
+        }
+        console.log(net);
+        // Changes logo based on return from net variabrle
+        if (!net || net == undefined) {
+          net = networkLogo.innerHTML = "<p>Invalid Network</p>";
+          console.log(networkLogo.innerHTML);
+        } else {
+          networkLogo.innerHTML = `<img src = "${net.imageUrl}"  class = "netImg" alt ="${net.name}"/>`;
+          console.log(networkLogo.innerHTML); 
+        }     
+      }
 // Event listener to trigger checkPhoneNumber function on input of first three digits
       phoneNumber.addEventListener("input", (e) => {
-        let firstThree = parseInt((phoneNumber.value.slice(0,3)));
-        // console.log(firstThree);
-        checkPhoneNumber(firstThree, networkId);
+          let val = e.target.value;
+        
+        if (val.length >= 3 && val.length <= 10){
+          let firstThree =  parseInt((val.slice(0,3)));
+        console.log(firstThree);
+        checkPhoneNumber(firstThree, networkId);}
        });
     
+// Event Listener to submit form
+      phonieform.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert(`
+        ${fName.value} ${lName.value}\n
+        ${emailAdd.value}\n
+        ${countryCode.value}-${phoneNumber.value}\n
+        ${track.value}\n
+        Saved Successfully`);
+
+      }); 
+
+
+
 };
   
   // ======= DO NOT EDIT ============== //

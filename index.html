@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="bodyWrapper">
+  <div class="bodyWrapper">
     <!-- Title of page -->
     <div class ="circleLogo">
       <img src="https://res.cloudinary.com/lumi007/image/upload/v1658393435/Black_Simple_Queen_Logo_Design_htt22e.png" alt="Circle Logo">
     </div>
     <div class="headerTitle">
-        <h2>Phonie App</h2>
+      <h2>Phonie App</h2>
     </div>
 
-    <form  action="#" method="POST" class="contact-form">
+    <form autocomplete="off " action="#" method="POST" class="phonieform">
         <div class="contact-form-cont">
             <div class="contact-form-wrapper">
                 <div class="space">
-                    <label for="Firstname">First Name: </label>
-                    <input type="text"  id ="fName" name="Firstname" placeholder="Enter your first name" required/>
+                    <label for="firstname">First Name: </label>
+                    <input type="text"  id ="fName" name="Firstname" placeholder="Enter your first name" required />
                     <br/>
                 </div>
                 <div class="space">
-                    <label for="Lastname">Last Name: </label>
-                    <input type="text" id = "lName" name="Lastname" placeholder="Enter your last name" required/>
+                    <label for="lastname">Last Name: </label>
+                    <input type="text" id = "lName" name="Lastname" placeholder="Enter your last name" required />
                     <br/>
                 </div>
                 <div class="space">
@@ -39,12 +39,30 @@
                     <label for="phonenumber">Mobile Number:</label>
                     <div class = "pNumber_cont">
                       <div class= "codeCountry">
-                        <select id="countryCode" name="CountryCode">
+                        <select id="countryCode" name="countrycode">
                             <option value="+234">+234</option>
                         </select>
                       </div> 
                       <div class= "p_NumberInput">
-                        <input id = "p_number" type="tel" name="PhoneNumber" placeholder="Enter remaining 10 digits" pattern="[0-9]{8}">
+                        <input id = "p_number" type="tel" name="phoneNumber" placeholder="Enter remaining 10 digits" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" list ="NetWorkTels" title="###-###-####" required />
+                        <datalist id="NetWorkTels">
+                          <option value="803-###-####">
+                          <option value="806-###-####">
+                          <option value="903-###-####">
+                          <option value="802-###-####">
+                          <option value="809-###-####">
+                          <option value="808-###-####">
+                          <option value="807-###-####">
+                          <option value="805-###-####">
+                          <option value="705-###-####">
+                          <option value="702-###-####">
+                          <option value="704-###-####">
+                          <option value="810-###-####">
+                          <option value="812-###-####">
+                          <option value="813-###-####">
+                          <option value="915-###-####">
+                          <option value="904-###-####">   
+                        </datalist>
                       </div>
                       <div id ="m_logo" >
                         <!-- Javascript adds logo here oninput -->
@@ -62,7 +80,7 @@
                 </div>
                 <div class="buttons-cont">
                     <button id = "submit" type="submit">Create</button>
-                    <button id = "cancel">Cancel</button>
+                    <button id = "cancel" type="reset">Cancel</button>
                 </div>	
             </div>
         </div>
