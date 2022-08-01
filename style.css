@@ -8,11 +8,14 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #81CACF,#355764); 
+  background-image: url(https://res.cloudinary.com/lumi007/image/upload/v1659223581/20220731_001011_0003_shztin.png);
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0 10px;
+  position: relative;
 }
 .bodyWrapper {
-  background: linear-gradient(-45deg, #F0EBE3, #e9fbf4);
+  background: white ;/* linear-gradient(-45deg, #F0EBE3, #e9fbf4);*/
   max-width: 360px;
   margin: 80px auto;
   height: auto;

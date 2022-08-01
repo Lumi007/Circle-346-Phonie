@@ -95,9 +95,7 @@ Write CSS Stylesheet.
 
 Write Javascript.
 
-3i. Write a Javascript function to check the Phone number using Regex (this should happen once the user starts typing.)
+3i. Write a Javascript function to check the Phone number (this should happen once the user starts typing.)
 3ii. Write a Javascript Function to change Mobile Network Logos based on the return from Regex validated value. 
 3iii.  Write a javascript function for validating form inputs on click of the submit button, and display contact details.
 
-CLICK ON LINK TO JOIN REPL.IT TEAM. AN EMAIL INVITE HAS ALSO BEEN SENT
-Join Repl.it Team

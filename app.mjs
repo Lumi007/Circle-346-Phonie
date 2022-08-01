@@ -70,7 +70,7 @@ function startApp() {
         }
         console.log(net);
         // Changes logo based on return from net variabrle
-        if (!net || net == undefined) {
+        if (!net || net === undefined) {
           net = networkLogo.innerHTML = "<p>Invalid Network</p>";
           console.log(networkLogo.innerHTML);
         } else {
